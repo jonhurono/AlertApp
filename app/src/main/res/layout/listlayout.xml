@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="fecha"
+            android:textColor="#293133"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="usuario"
+            android:textColor="#C2185B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/guion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="-"
+            />
+
+        <TextView
+            android:id="@+id/accion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="accion"
+            android:textColor="#D32F2F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1">
+
+        <TextView
+            android:id="@+id/Obs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Obs:"
+            android:textColor="#293133"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/observacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text=""
+            android:textColor="#293133"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/descripcionart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#293133"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <View
+        android:id="@+id/franja2"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/row2"
+        android:background="#DFDFDF"
+        android:visibility="visible" />
+
+</RelativeLayout>

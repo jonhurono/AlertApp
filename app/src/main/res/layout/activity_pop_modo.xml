@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_bg"
+    tools:context="com.johnchaves.alertapp.PopModo">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/acepta_desp_picking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/acepta_desp_picking"
+                android:textSize="16sp"
+                />
+
+            <CheckBox
+                android:id="@+id/acepta_despacho_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acepta_despacho_item"
+                android:onClick="selectItem"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/acepta_tr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/acepta_tr"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/anula_itemizada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/anula_itemizada"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/anulacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/anulacion"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/aumenta_saldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/aumenta_saldo"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cambio_oficina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/cambio_oficina"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/capac_cajas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/capac_cajas"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/eliminacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/eliminacion"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/liberacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/liberacion"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/log_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/log_in"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/modifica_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/modifica_items"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/modifica_oferta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/modifica_oferta"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/modifica_tr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/modifica_tr"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/modifica_visacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/modifica_visacion"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/nueva_oferta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/nueva_oferta"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp">
+
+            <CheckBox
+                android:id="@+id/nuevo_tr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/nuevo_tr"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/nuevo_tr_picking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/nuevo_tr_picking"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/solic_pendientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/solic_pendientes"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/tr_pendientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectItem"
+                android:text="@string/tr_pendientes"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="finalSelection"
+                android:text="OK"
+                android:textColor="#A36161"
+                android:textStyle="bold"
+                app:iconTint="@color/black" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

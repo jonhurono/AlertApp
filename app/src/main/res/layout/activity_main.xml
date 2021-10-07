@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.johnchaves.alertapp.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.AlertApp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="">
+            <!--app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"-->
+
+            <!-- <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" /> -->
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp">
+
+            <TableRow
+                android:id="@+id/table_row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cab_fecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="#FFF"
+                        android:baselineAligned="false"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="FECHAS:"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fechaold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:background="#FFF"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/guion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:background="#FFF"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="  - "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/fechanew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:background="#FFF"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/cab_usuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:background="#FFF"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:textColor="#C2185B"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:text="" />
+                </TableRow>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cab_accion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:background="#FFF"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text="TIPO ACCIÓN:"
+                        android:textColor="#D32F2F"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Modo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text=""
+                        android:textColor="#404040" />
+
+                    <TextView
+                        android:id="@+id/cab_observacion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:fontFamily="@font/allerta_stencil"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableRow>
+
+            <View
+                android:id="@+id/franja"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="#ff0000"
+                android:visibility="visible" />
+
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swype"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FiltroNCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="380dp"
+        android:backgroundTint="#facf5a"
+        android:baselineAlignBottom="true"
+        android:clickable="false"
+        android:src="@drawable/ncl"
+        app:maxImageSize="40dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FiltroOferta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="310dp"
+        android:backgroundTint="#facf5a"
+        android:baselineAlignBottom="true"
+        android:clickable="false"
+        android:src="@drawable/pig"
+        app:maxImageSize="40dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="240dp"
+        android:backgroundTint="#facf5a"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FiltroUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="240dp"
+        android:backgroundTint="#facf5a"
+        android:baselineAlignBottom="true"
+        android:clickable="false"
+        android:src="@drawable/user"
+        app:maxImageSize="32dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FiltroModo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="170dp"
+        android:backgroundTint="#facf5a"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:src="@drawable/filter"
+        app:maxImageSize="34dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FiltroFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="#facf5a"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:src="@drawable/calendar"
+        app:maxImageSize="36dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#00C853"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:src="@drawable/search"
+        app:maxImageSize="36dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AlertApp</string>
+
+    <string name="acepta_desp_picking">ACEPTA DESP_PICKING</string>
+    <string name="acepta_despacho_item">ACEPTA DESPACHO ITEM</string>
+    <string name="acepta_tr">ACEPTA TR</string>
+    <string name="anula_itemizada">ANULA ITEMIZADA</string>
+
+    <string name="anulacion">ANULACION</string>
+    <string name="aumenta_saldo">AUMENTA SALDO</string>
+    <string name="cambio_oficina">CAMBIO OFICINA</string>
+    <string name="capac_cajas">CAPAC. CAJAS</string>
+
+    <string name="eliminacion">ELIMINACION</string>
+    <string name="liberacion">LIBERACIÓN</string>
+    <string name="log_in">LOG IN</string>
+    <string name="modifica_items">MODIFICA ITEMS</string>
+
+    <string name="modifica_oferta">MODIFICA OFERTA</string>
+    <string name="modifica_tr">MODIFICA TR</string>
+    <string name="modifica_visacion">MODIFICA VISACION</string>
+    <string name="nueva_oferta">NUEVA OFERTA</string>
+
+    <string name="nuevo_tr">NUEVO TR</string>
+    <string name="nuevo_tr_picking">NUEVO TR_PICKING</string>
+    <string name="solic_pendientes">SOLIC. PENDIENTES</string>
+    <string name="tr_pendientes">TR PENDIENTES</string>
+
+</resources>
